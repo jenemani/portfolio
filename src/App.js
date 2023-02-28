@@ -13,13 +13,13 @@ function App() {
       <div className="Body">
         <AboutMe />
         <img
-          src="./Assets/branch.svg"
+          src="./Assets/branch.png"
           alt="Branch Connector"
           className="spacer"
         />
         <MyWork />
         <img
-          src="/Assets/branch.svg"
+          src="/Assets/branch.png"
           alt="Branch conector"
           className="spacer"
         />
@@ -29,19 +29,6 @@ function App() {
   );
 }
 
-/**
- *     <div className="App">
-      <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Menu />}>
-            <Route index element={<AboutMe />} />
-            <Route path="MyWork" element={<MyWork />} />
-            <Route path="Contact" element={<Contact />} />
-          </Route>
-        </Routes>
-      </BrowserRouter>
-    </div>;
- */
 
 
 export default App;
