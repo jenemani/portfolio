@@ -1,0 +1,356 @@
+/*MENU STYLING */
+.menuHeader {
+  font-style: italic;
+  font-weight: 1000;
+  padding-top: 1em;
+  padding-bottom: 0.3em;
+  font-size: 2em;
+  color: var(--third);
+  text-decoration: none;
+  line-height: 0.5em;
+}
+
+.label {
+  text-align: right;
+  font-weight: 900;
+  font-size: 0.5em;
+  line-height: 0.8;
+  margin: 0;
+  color: var(--fourth);
+  white-space: nowrap;
+}
+
+.triangle {
+  color: var(--fourth);
+  font-size: 0.4em;
+}
+
+.menu-button {
+  background-color: transparent;
+  color: rgba(245, 245, 245, 0.877);
+  border: 0;
+  font-size: 1.1em;
+  font-weight: 100;
+  width: fit-content;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.menu-button-selected {
+  background-color: transparent;
+  color: var(--fourth);
+  border: 0;
+  font-size: 1.1em;
+  font-weight: 100;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.menu-button:hover {
+  cursor: pointer;
+  color: var(--fourth);
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.menu-project {
+  text-align: left;
+  font-style: italic;
+  text-align: right;
+  padding-top: 3em;
+  padding-left: 0.2em;
+  padding-right: 2em;
+  width: 11em;
+}
+
+.menu-project-button {
+  background-color: transparent;
+  width: 20vw;
+  color: rgba(245, 245, 245, 0.877);
+  border: 0;
+  font-size: 1em;
+  font-weight: 100;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.menu-project-button-selected {
+  background-color: transparent;
+  width: 20vw;
+  color: var(--fourth);
+  border: 0;
+  font-size: 1em;
+  font-weight: 100;
+  text-decoration: none;
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.menu-project-button:active {
+  background: var(--fourth);
+  color: var(--fourth);
+}
+
+.menu-project-button:hover {
+  color: var(--fourth);
+  -webkit-transition: background-color 0.5s ease-in-out;
+  -moz-transition: background-color 0.5s ease-in-out;
+  -ms-transition: background-color 0.5s ease-in-out;
+  -o-transition: background-color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+/*HOME STYLING */
+.home-buttons {
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  background-image: url("../../public/Assets/drafting.png");
+  gap: 0em;
+  margin-top: 0em;
+  grid-template-columns: 20vmax, 20vmax;
+  grid-template-rows: 40vmax, 40vmax;
+  justify-content: center;
+  padding-left: 0em;
+}
+
+.home-images {
+  object-fit: contain;
+  max-width: 20em;
+  max-height: 20em;
+}
+.play-around {
+  width: 100vw;
+  height: 200vh;
+  position: fixed;
+  margin-left: 0;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+.play-images {
+  width: 100vw;
+  width: auto;
+  object-fit: contain;
+}
+
+.home-button {
+  background-color: var(--main);
+  border: 0;
+  padding: 0;
+  color: var(--third);
+  font-size: 1.5em;
+  text-align: right;
+}
+
+.home-hover,
+.home-hover-special {
+  width: 35vmax;
+  height: 22vmax;
+  position: absolute;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -ms-transition: opacity 0.5s ease-in-out;
+  -o-transition: opacity 0.5s ease-in-out;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.home-hover-special {
+  opacity: 0.2;
+}
+
+.hover-text {
+  box-sizing: border-box;
+  position: absolute;
+  padding-top: 9em;
+  right: 5%;
+  margin: 0;
+  text-align: right;
+  font-size: 1.1em;
+  position: absolute;
+  color: --fourth;
+  font-style: italic;
+  font-weight: 1000;
+}
+
+.home-hover-special:hover,
+.home-hover:hover {
+  opacity: 0.8;
+  color: var(--fourth);
+  background-color: rgba(9, 9, 9, 0.2);
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.home-button:hover {
+  color: var(--fourth);
+  cursor: pointer;
+  -webkit-transition: opacity 0.2s ease-in-out;
+  -moz-transition: opacity 0.2s ease-in-out;
+  -ms-transition: opacity 0.2s ease-in-out;
+  -o-transition: opacity 0.2s ease-in-out;
+  transition: opacity 0.2s ease-in-out;
+}
+/*ABOUT STYLING */
+.about-body {
+  display: grid;
+  grid-template-columns: 19em 20em;
+  grid-template-rows: 100vh;
+  gap: 0em;
+  padding-bottom: 0;
+}
+
+.about-text {
+  text-align: right;
+  padding-top: 17em;
+  padding-left: 4em;
+  font-size: 0.8em;
+  overflow-y: scroll;
+}
+.about-image-box {
+  width: 100%;
+  height: 100vh;
+  margin-left: 8em;
+  position: fixed;
+}
+
+.about-image {
+  height: 60em;
+}
+
+/*PORTFOLIO STYLING*/
+.project-page {
+  display: grid;
+  grid-template-columns: 20em, 100em;
+  grid-template-rows: 100vh;
+  padding-left: 1em;
+}
+
+.project-header {
+  background-color: var(--fourth);
+  width: 20em;
+  min-height: 100vh;
+  text-wrap: wrap;
+  word-wrap: break-word;
+  overflow-x: hidden;
+  overflow-y: auto;
+  grid-column-start: 1;
+}
+.project-h1 {
+  font-size: 4em;
+  text-align: right;
+  padding-left: 0.1em;
+  padding-right: 0.1em;
+  padding-top: 2em;
+  line-height: 0.7em;
+}
+
+.project-subhead {
+  font-size: 0.8em;
+  font-weight: 100;
+  text-align: right;
+  line-height: 1.2em;
+  padding-left: 0.3em;
+  padding-top: 2em;
+  padding-right: 0.9em;
+}
+
+.project-info {
+  font-size: 0.8em;
+  text-align: left;
+  padding-top: 3em;
+  padding-left: 3em;
+  padding-right: 2em;
+  padding-bottom: 3em;
+}
+
+.project-image-box {
+  overscroll-behavior-block: contain;
+  background-color: black;
+  height: 100vh;
+  display: inline-block;
+  align-content: center;
+  overflow-y: scroll;
+  grid-column-start: 2;
+  padding: 0;
+}
+.slide {
+  display: inline-block;
+  width: 100%;
+  overflow-x: scroll;
+}
+
+.project-image {
+  position: absolute;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/*Contact*/
+.contact {
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+.contact-card {
+  width: 30em;
+  height: 12em;
+  position: absolute;
+  text-align: right;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20vh;
+  padding-top: 10em;
+  margin-left: 20vw;
+  padding-right: 2.4vw;
+  padding-bottom: 2.4vw;
+  background-color: black;
+}
+.contact-text {
+  font-size: 1em;
+
+  border-top: 10em;
+  font-weight: 200;
+  line-height: 1.4em;
+  text-decoration: none;
+  color: var(--third);
+}
+
+.contact-link {
+  font-size: 1em;
+
+  border-top: 10em;
+  font-weight: 200;
+  line-height: 1.4em;
+  text-decoration: none;
+  color: var(--third);
+}
+
+.contact-link:hover {
+  text-decoration: underline !important;
+  cursor: pointer;
+  color: var(--second);
+}
+
+.contact-image {
+  height: 150vh;
+  object-fit: contain;
+}

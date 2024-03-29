@@ -1,0 +1,166 @@
+:root {
+  --main: rgb(8, 8, 8);
+  --second: rgb(105, 167, 186);
+  --third: rgb(245, 245, 245);
+  --fourth: rgb(130, 154, 225);
+  /*rgb(121, 160, 121)*/
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+@supports (font-variation-settings: normal) {
+  :root {
+    font-family: "Inter var", sans-serif;
+  }
+}
+
+html {
+  background-color: --third;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.App {
+  display: flex;
+  justify-content: space-between;
+}
+
+.anchor {
+  text-decoration: none;
+  cursor: default;
+}
+
+.body {
+  margin-left: 12em;
+}
+
+span {
+  height: 3em;
+}
+
+.about-header {
+  margin: 0;
+  cursor: default;
+  font-size: 1.7em;
+  font-weight: 900;
+  text-align: right;
+  color: var(--main);
+  max-width: 35vw;
+  min-width: 10em;
+}
+
+.aboutButtons {
+  display: flex;
+  padding-right: 5em;
+  margin-left: 5em;
+  justify-content: flex-end;
+}
+
+.aboutButton {
+  background-color: var(--main);
+  border: 0;
+  color: var(--third);
+  font-weight: 600;
+  margin-left: 1em;
+  padding: 0.3em;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.aboutButton:hover {
+  color: var(--fourth);
+  cursor: pointer;
+}
+
+.header {
+  color: rgb(121, 159, 121);
+  writing-mode: vertical-lr;
+  font-weight: 900;
+  align-self: flex-start;
+  margin: 0;
+  height: max-content;
+  margin-left: 0.1em;
+  width: auto;
+}
+
+.menu {
+  position: fixed;
+  display: flex;
+  font-weight: 800;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: rgb(255, 250, 243);
+  background-color: var(--main);
+  height: 100dvh;
+  width: 12em;
+  text-align: left;
+  padding-left: 1em;
+}
+
+.padding {
+  margin: 0;
+  height: 2em;
+}
+
+.Routes {
+  display: flex;
+  flex-direction: column;
+  width: 83vw;
+  margin-left: 17vw;
+  height: auto;
+}
+
+.spacer {
+  height: auto;
+  width: 100vw;
+  margin: 0;
+  align-self: center;
+}
+
+.menuButton {
+  background-color: transparent;
+  color: rgba(245, 245, 245, 0.877);
+  border: 0;
+  font-size: 1.1em;
+  font-weight: 100;
+  width: fit-content;
+  text-decoration: none;
+}
+
+.menuButton:hover {
+  cursor: pointer;
+  color: var(--fourth);
+}
+
+h1 {
+  font-weight: 2em;
+  margin-bottom: 0;
+  margin-top: 0.24em;
+  color: var(--third);
+}
+
+h2 {
+  margin: 0.32em 0em;
+  font-size: 3.2em;
+  font-weight: 800;
+  text-align: left;
+  line-height: 0.8em;
+  color: var(--main);
+  text-decoration: none;
+}
+
+h3 {
+  font-size: 4em;
+  font-weight: 900;
+  margin-bottom: 0;
+  margin-top: 0.24em;
+  color: var(--third);
+}
